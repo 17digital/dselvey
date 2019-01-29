@@ -1,0 +1,436 @@
+/* CSS Main */
+
+body {
+text-align : center;
+font-family : arial, sans-serif;
+background : #fff url('../images/main_bg.jpg') repeat 0 0;
+}
+
+div.top {
+height : 50px;
+background : url(../images/header_bg.png) repeat-x 0 0;
+}
+
+div#heading {
+margin : auto;
+width : 900px;
+overflow : hidden;
+
+}
+
+div#header {
+float : right;
+width : 200px;
+}
+
+h1#logo {
+float : right;
+display : block; 
+width : 100px;
+height : 40px;
+background : url('../images/facebook_header.jpg') no-repeat 0 0; 
+}
+
+h1#logo a {
+display : block;
+width : 100px;
+height : 40px;
+text-indent : -9999px; 
+}
+
+div#navigation {
+margin-top : 8px;
+float : left;
+
+}
+
+ul#menu {
+padding-top : 2px;
+list-style-type : none;
+font-family : 'Comfortaa', serif;
+font-size : 0.91em;
+font-weight : 400;
+letter-spacing : 1px;
+}
+
+ul#menu li {
+display : inline;
+padding-right : 11px;
+margin-left : 0.60em;
+border-right : 1px solid #fff;
+}
+
+ul#menu a#home {
+font-family: 'Great Vibes', cursive;
+font-weight : 400; 
+color : #917c6b;
+font-size : 1.6em;
+margin-right : 5px;
+}
+
+ul#menu li#last {
+border : none;
+}
+
+ul#menu li a {
+font-size : 0.91em;
+color : #fff;
+text-decoration : none;
+}
+
+ul#menu li a:visited {
+color : #fff;
+text-decoration : none;
+}
+
+ul#menu li a:hover {
+color : #963;
+text-decoration : underline;
+}
+
+ul#menu li a#active {
+text-decoration : underline;
+color : #917c6b;
+}
+
+div#container {
+margin : auto;
+width : 904px;
+background : url('../images/default/container_bg.png') repeat-y 0 0;
+-moz-box-shadow : 0 0 9px #888;
+-webkit-box-shadow : 0 0 9px #888;
+box-shadow : 0 0 9px #888;
+}
+
+div#banner {
+position : relative;
+margin : auto;
+/*overflow : hidden; */
+width : 900px;
+height : 500px;
+background : url('../images/main_banner.jpg') no-repeat 0 0;
+}
+
+div#dselvey_img {
+float : left; 
+position : absolute;
+left : -85px;
+z-index : 100;
+
+
+}
+
+div#name-gallery {
+float : right;
+width : 600px;
+padding-top : 10px;
+margin-right : 2px;
+text-align : center;
+
+}
+
+h1#name {
+font-size : 72px;
+font-family: 'Great Vibes', cursive;
+font-weight : 400; 
+}
+
+span#tag {
+position : relative;
+top : -20px;
+color : #ccc;
+letter-spacing : 1px;
+}
+
+div#main-content {
+width : 100%;
+overflow : hidden; 
+}
+
+div#main-content a {
+color : #917c6b;
+text-decoration : none;
+}
+
+div#main-content a:visited {
+color : #917c6b;
+text-decoration : none;
+}
+
+div#about-content {
+position : relative; 
+margin : auto;
+text-align : left;
+width : 880px;
+}
+
+div#about-content p {
+margin-top : 20px;
+line-height : 1.4em;
+color : #3e3e3e;
+}
+
+div.gallery-view {
+margin : 10px auto;
+width : 855px;
+/*background : #000; */
+}
+
+div.gallery-view img {
+margin : 2px;
+border : 2px solid #4e4e4e;
+}
+
+img#bio {
+float : right;
+margin-left : 10px;
+-moz-box-shadow : 3px 3px 4px #222;
+-webkit-box-shadow : 3px 3px 4px #222;
+box-shadow : 3px 3px 4px #222;
+
+/*IE 8 Fix */
+-ms-filter : "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='222222')";
+
+/*IE 5.5 - 7 Fix  */
+filter : progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='222222');
+
+}
+
+img#bio2 {
+float : left;
+margin-top : 20px;
+margin-right : 15px;
+-moz-box-shadow : 3px 3px 4px #222;
+-webkit-box-shadow : 3px 3px 4px #222;
+box-shadow : 3px 3px 4px #222;
+
+/*IE 8 Fix */
+-ms-filter : "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='222222')";
+
+/*IE 5.5 - 7 Fix  */
+filter : progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='222222');
+
+}
+
+div#left-content {
+float : left;
+width : 440px;
+padding-left : 10px;
+text-align : left;
+}
+
+h2.main-title {
+font-family: 'Comfortaa', sans-serif;
+font-weight : 400; 
+}
+
+div.news-content {
+margin-top : 20px; 
+overflow : hidden;
+width : 440px;
+padding-bottom : 30px;
+border-bottom : 1px solid #917c6b;
+}
+
+div.news-content p {
+color : #666;
+font-size : .90em;
+line-height : 1.3em;
+}
+
+img.news-icon {
+float : left;
+width : 200px;
+height : 200px;
+margin-right : 15px;
+-moz-box-shadow : 3px 3px 4px #000;
+-webkit-box-shadow : 3px 3px 4px #000;
+box-shadow : 3px 3px 4px #000;
+
+/*IE 8 Fix */
+-ms-filter : "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='000000')";
+
+/*IE 5.5 - 7 Fix  */
+filter : progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='000000');
+
+}
+
+h3#sub-title {
+margin-bottom : 10px;    
+font-family: 'Judson', serif;
+font-weight : 400;	
+color : #917c6b;																									 
+}
+
+div#right-content {
+float : right;
+text-align : left;
+width : 400px;
+padding-right : 10px;
+
+}
+
+/*===================================================
+Video Section on Media Page
+====================================================*/
+div#video-section {
+clear : both;
+padding-top : 30px;
+margin: auto;
+text-align : left;
+width : 780px;
+}
+
+div#video-section p {
+color : #bbb;
+}
+
+/*===================================================
+STYLE THE SUBSCRIPTION FORM!
+====================================================*/
+::-webkit-input-placeholder {
+color : rgb(190, 188, 188);
+font-style : italic;
+}
+
+#wrapper p{
+	margin-bottom:15px;
+}
+#wrapper p:first-child{
+	margin: 0px;
+}
+#wrapper label{
+	color: rgb(64, 92, 96);
+	position: relative;
+}
+
+/**** advanced input styling ****/
+/* placeholder */
+::-webkit-input-placeholder  { 
+	color: rgb(190, 188, 188); 
+	font-style: italic;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder{ 
+	color: rgb(190, 188, 188);
+	font-style: italic;
+} 
+input {
+  outline: none;
+}
+
+/* all the input except submit and checkbox */
+#wrapper input:not([type="checkbox"]){
+	width: 92%;
+	margin-top: 4px;
+	padding: 10px 5px 10px 32px;	
+	border: 1px solid rgb(178, 178, 178);
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	  -moz-box-sizing : content-box;
+	       box-sizing : content-box;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px;
+	-webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+	   -moz-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+	        box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+	-webkit-transition: all 0.2s linear;
+	   -moz-transition: all 0.2s linear;
+	     -o-transition: all 0.2s linear;
+	        transition: all 0.2s linear;
+}
+#wrapper input:not([type="checkbox"]):active,
+#wrapper input:not([type="checkbox"]):focus{
+	border: 1px solid rgba(91, 90, 90, 0.7);
+	background: rgba(238, 236, 240, 0.2);	
+	-webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+	   -moz-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+	        box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+} 
+
+
+
+p.login.button,
+p.signin.button{
+	text-align: right;
+	margin: 5px 0;
+}
+
+#register{
+	/*position: absolute; */
+	
+	width: 88%;	
+	padding: 18px 6% 40px 6%;
+	margin: 0 0 35px 0;
+	background: rgb(247, 247, 247);
+	border: 1px solid rgba(147, 184, 189,0.8);
+	-webkit-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	   -moz-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	        box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	-webkit-box-shadow: 5px;
+	-moz-border-radius: 5px;
+		 border-radius: 5px;
+	z-index: 21;
+	
+}
+
+/** yerk some ugly IE fixes 'cause I know someone will ask "why does it look ugly in IE?", no matter how many warnings I will put in the article */
+
+/* Social Icons */
+
+ul#social-cons {
+margin-top : 10px;
+margin-left : 10px;
+list-style-type : none;
+}
+
+ul#social-cons li {
+display : inline; 
+margin-right : 10px;
+
+}
+
+img.icons {
+width : 55px;
+height : 100px;
+ 
+}
+
+div#footer {
+width : 100%;
+margin-top : 60px;
+padding-bottom : 50px;
+}
+
+ul.bottom-menu {
+margin-top : 10px;
+list-style-type : none;	
+font-size : .90em;
+}
+
+ul.bottom-menu li {
+display : inline;
+margin-left : 0.50em;
+padding-right : 11px;
+letter-spacing : .20em;
+border-right : 1px solid #963;
+}
+
+ul.bottom-menu li a {
+color : #917c6b;
+text-decoration : none;
+}
+
+ul.bottom-menu li.last {
+border : none;
+}
+
+ul#foot-tag li{
+letter-spacing : .05em;
+color : #b1b0ae;
+}
+
+ul#foot-tag li a {
+color : #b1b0ae;
+}

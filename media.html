@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+	
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<title>The New Official Site of Demetric Selvey</title>
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="Description" content="Welcome to the new Official Site of Songstress Demetric Selvey, listen to the new hit single, I am Free" />
+<meta name="author" content="csickmedia | www.csickmedia.com" />
+<meta name="copyright" content="csickmedia | www.csickmedia.com" />
+
+
+<link rel="stylesheet" type="text/css" href="css/global.css" />
+<link rel="stylesheet" type="text/css" href="css/dselvey.css" />
+<link rel="stylesheet" type="text/css" href="css/gallery.css" />
+<link rel="stylesheet" type="text/css" href="css/inlineplayer.css" />
+<link rel="stylesheet" type="text/css" href="flashblock/flashblock.css" />
+
+<link href='http://fonts.googleapis.com/css?family=Judson' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="script/soundmanager2.js"></script>
+<script type="text/javascript" src="script/inlineplayer.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script> 
+<script src="js/slides.min.jquery.js"></script>
+
+<script>
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'images/gallery/loading.gif',
+				play: 8000,
+				pause: 4500,
+				hoverPause: true,
+				animationStart: function(current){
+					$('.caption').animate({
+						bottom:-35
+					},100);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationStart on slide: ', current);
+					};
+				},
+				animationComplete: function(current){
+					$('.caption').animate({
+						bottom:0
+					},200);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationComplete on slide: ', current);
+					};
+				},
+				slidesLoaded: function() {
+					$('.caption').animate({
+						bottom:0
+					},200);
+				}
+			});
+		});
+	</script>
+	
+
+
+</head>
+
+<body>
+
+
+<div class="top">
+	<div id="heading">
+		
+		<div id="header">
+		<h1 id="logo"><a href="http://www.facebook.com/pages/Demetric-Selvey/297399216994642" target="_blank">Face</a></h1>
+		</div>
+			
+	<div id="navigation">
+	<ul id="menu">
+
+		<li><a href="/" id="home">Demetric Selvey</a></li>
+		<li><a href="news.html">News</a></li>
+		<li><a href="about.html" title="About Me">About</a></li>
+
+		<li><a href="media.html" id="active">Media</a></li>
+		<li><a href="gallery.html" title="Photo Gallery">Photo Gallery</a></li>
+		<li><a href="guest-book.html">Guest Book</a></li>
+
+		
+		<li id="last"><a href="http://www.reverbnation.com/deeselvey" target="_blank">Store</a></li>
+	</ul></div>
+
+	
+	</div>
+		
+</div>
+
+<div id="container">
+		
+			<div id="banner"><!--OVERALL BANNER WRAP TO HOLD EVERTYHING TOGETHER -->
+				
+				<div id="dselvey_img">
+				<img src="images/default/dselvey2.png" alt="Demetric Selvey" />
+
+				</div>
+			
+			<div id="name-gallery"><!--BEGIN NAME and GALLERY WRAP FOR FLOAT RIGHT -->
+						
+				<div id="name">
+				<h1 id="name">Demetric Selvey</h1>
+				<span id="tag">My New Official Website!</span>
+				</div>
+				
+				
+				
+				<div id="example"> <!--START GALLERY WRAP -->
+
+					<!--Remove Ribbon 
+					<img src="images/gallery/new-ribbon.png" width="112" height="112" alt="New Ribbon" id="ribbon">
+					-->
+					
+				<div id="slides">
+				<div class="slides_container">
+					<div class="slide">
+						<a href="#" title="Daddy's Little Girl"><img src="images/gallery/slide-1.jpg" width="570" height="270" alt="Slide 1"></a>
+						<div class="caption" style="bottom:0">
+
+							<p>Daddy's Little Girl - Official Video Coming Soon!</p>
+						</div>
+
+					</div>
+					<div class="slide">
+						<a href="media.html" title="I am Free"><img src="images/gallery/slide-2.jpg" width="570" height="270" alt="Slide 2"></a>
+						<div class="caption">
+							<p>Check Out the Latest Single - &quot;I Am Free&quot;</p>
+						</div>
+
+					</div>
+
+					<div class="slide">
+						<a href="#" title="Beauty for Ashes"><img src="images/gallery/slide-3.jpg" width="570" height="270" alt="Slide 3"></a>
+						<div class="caption">
+							<p>New Album Release &quot;Beauty for Ashes&quot; Coming Soon!</p>
+						</div>
+					</div>
+
+				</div>
+
+				<a href="#" class="prev"><img src="images/gallery/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
+				<a href="#" class="next"><img src="images/gallery/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>
+			</div>
+			<img src="images/gallery/example-frame.png" width="739" height="341" alt="Example Frame" id="frame"> 
+		</div> <!--END GALLERY WRAP -->
+				
+				
+				
+			
+			
+			</div><!--END NAME and GALLERY WRAP FOR FLOAT RIGHT -->
+		</div><!--END OVERALL BANNER WRAP TO HOLD EVERTYHING TOGETHER -->
+		
+		
+		 
+		<div id="main-content"><!--MAIN CONTENT WRAP FOR MAIN SECTION -->
+			
+<div id="media">
+
+		
+
+	<div id="media-right">
+		<div class="header">
+			<h2 class="title"><a href="#">Beauty for Ashes</a></h2>
+		</div> <!-- End of header -->
+	
+	
+		<table class="table1">
+			<thead>
+				<tr>
+					<!--
+					<th>Beauty for Ashes</th>
+					<th scope="col" abbr="Starter">Album Title</th>
+			
+					<th scope="col" abbr="Medium">Smart Medium</th>
+					<th scope="col" abbr="Business">Smart Business</th>
+					<th scope="col" abbr="Deluxe">Smart Deluxe</th> -->
+				</tr>
+			</thead>
+			
+
+			<tbody>
+				<tr>
+					<td class="track">1</td>
+					<td class="play"><a href="trax/mp3-3.mp3" class="sm2_link">Play</a></td>
+					<td class="title">Speak to Me</td>
+			
+					<td class="duration">2:59</td>
+				</tr>
+			
+				<tr>
+					<td class="track">2</td>
+					<td class="play"><a href="trax/mp3-0.mp3" class="sm2_link">Play</a></td>
+					<td class="title">I Am Free</td>
+			
+					<td class="duration">3:57</td>
+				</tr>
+		
+				<tr id="alt">
+					<td class="track">3</td>
+					<td class="play"><a href="trax/mp3-1.mp3" class="sm2_link">Play</a></td>
+					<td class="title">Daddy's Little Girl</td>
+			
+					<td class="duration">4:52</td>
+				</tr>
+		
+				<tr>
+					<td class="track">4</td>
+					<td class="play"><a href="trax/mp3-2.mp3" class="sm2_link">Play</a></td>
+					<td class="title">Invincible</td>
+			
+					<td class="duration">4:43</td>
+				</tr>
+			</tbody>
+		</table></div><!-- End Media right -->
+
+	<div id="media-left">
+		<img src="images/default/album_cover.jpg" alt="" id="album-cover"/>
+		<h2 id="album-button"><a href="http://www.reverbnation.com/deeselvey" target="_blank">Download</a></h2>
+	
+				<div id="sm2-container">
+				<!-- SM2 flash goes here -->
+				</div> 
+	</div><!--End of media- Left-->
+	
+	<div id="video-section">
+		<h2 class="title"><a href="#">Featured Video</a></h2>
+		<p>Nate and Dee's First Year</p>
+			<iframe width="780" height="420" src="http://www.youtube.com/embed/GZ3UY6bUE-8" frameborder="0" allowfullscreen></iframe>
+	</div><!--End of Video Section-->
+	
+</div> <!--End Media -->
+			
+			
+		
+		</div><!--END MAIN CONTENT WRAP FOR MAIN SECTION -->
+			
+			
+	<div id="footer">
+			<ul class="bottom-menu">
+				<li><a href="/">Demetric Selvey</a></li>
+				<li><a href="news.html">News</a></li>
+				<li><a href="about.html">About</a></li>
+
+				<li><a href="media.html">Media</a></li>
+				<li><a href="gallery.html">Photo Gallery</a></li>
+				<li><a href="guest-book.html">Guest Book</a></li>
+				<li class="last"><a href="http://www.reverbnation.com/deeselvey">Store</a></li>
+			
+			</ul>
+			
+			<ul class="bottom-menu" id="foot-tag">
+				<li>&copy; 2012 All Rights Reserved</li>
+
+				<li><a href="/" title="Mantra Muzic">MantraMuzic</a></li>
+				
+				<li class="last">Designed by <a href="http://www.csickmedia.com" target="_blank">CsickMedia</a></li>
+			</ul>
+	</div>
+	
+
+</div><!--END CONTAINER SECTION -->
+
+
+</body>
+
+</html>

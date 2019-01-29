@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+	
+<html xmlns="http://www.w3.org/1999.xhtml" lang="en" xml:lang="en">
+<head>
+
+<title>The New Official Site of Demetric Selvey</title>
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="Description" content="Welcome to the new Official Site of Songstress Demetric Selvey, listen to the new hit single, I am Free" />
+<meta name="author" content="csickmedia | www.csickmedia.com" />
+<meta name="copyright" content="csickmedia | www.csickmedia.com" />
+
+
+<link rel="stylesheet" type="text/css" href="css/global.css" />
+<link rel="stylesheet" type="text/css" href="css/dselvey.css" />
+
+<link rel="stylesheet" type="text/css" href="css/gallery.css" />
+<link href='http://fonts.googleapis.com/css?family=Judson' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script src="js/slides.min.jquery.js"></script>
+
+<script>
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'images/gallery/loading.gif',
+				play: 8000,
+				pause: 4500,
+				hoverPause: true,
+				animationStart: function(current){
+					$('.caption').animate({
+						bottom:-35
+					},100);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationStart on slide: ', current);
+					};
+				},
+				animationComplete: function(current){
+					$('.caption').animate({
+						bottom:0
+					},200);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationComplete on slide: ', current);
+					};
+				},
+				slidesLoaded: function() {
+					$('.caption').animate({
+						bottom:0
+					},200);
+				}
+			});
+		});
+	</script>
+</head>
+
+<body>
+<div id="fb-root"></div>
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '247282428694119', 
+      channelUrl : 'http://www.facebook.com/pages/Demetric-Selvey/297399216994642', // Channel File
+      status     : true, // check login status
+      cookie     : true, // enable cookies to allow the server to access the session
+      xfbml      : true  // parse XFBML
+    });
+
+    // Additional initialization code here
+  };
+
+  // Load the SDK Asynchronously
+  (function(d){
+     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     ref.parentNode.insertBefore(js, ref);
+   }(document));
+</script>
+
+<div class="top">
+	<div id="heading">
+		
+		<div id="header">
+		<h1 id="logo"><a href="http://www.facebook.com/pages/Demetric-Selvey/297399216994642" target="_blank">Face</a></h1>
+		</div>
+			
+	<div id="navigation">
+	<ul id="menu">
+
+		<li><a href="/" id="home">Demetric Selvey</a></li>
+		<li><a href="news.html" title="Latest News" id="active">News</a></li>
+		<li><a href="about.html">About</a></li>
+
+		<li><a href="media.html">Media</a></li>
+		<li><a href="gallery.html">Photo Gallery</a></li>
+		<li><a href="guest-book.html">Guest Book</a></li>
+
+		
+		<li id="last"><a href="http://www.reverbnation.com/deeselvey" target="_blank">Store</a></li>
+	</ul></div>
+
+	
+	</div>
+		
+</div>
+
+<div id="container">
+		
+			<div id="banner"><!--OVERALL BANNER WRAP TO HOLD EVERTYHING TOGETHER -->
+				
+				<div id="dselvey_img">
+				<img src="images/default/dselvey3.png" alt="Demetric Selvey" />
+
+				</div>
+			
+			<div id="name-gallery"><!--BEGIN NAME and GALLERY WRAP FOR FLOAT RIGHT -->
+						
+				<div id="name">
+				<h1 id="name">Demetric Selvey</h1>
+				<span id="tag">My New Official Website!</span>
+				</div>
+				
+				
+				
+				<div id="example"> <!--START GALLERY WRAP -->
+
+					<!--Remove Ribbon 
+					<img src="images/gallery/new-ribbon.png" width="112" height="112" alt="New Ribbon" id="ribbon">
+					-->
+					
+				<div id="slides">
+				<div class="slides_container">
+					<div class="slide">
+						<a href="#" title="Daddy's Little Girl"><img src="images/gallery/slide-1.jpg" width="570" height="270" alt="Slide 1"></a>
+						<div class="caption" style="bottom:0">
+
+							<p>Daddy's Little Girl - Official Video Coming Soon!</p>
+						</div>
+
+					</div>
+					<div class="slide">
+						<a href="media.html" title="I am Free"><img src="images/gallery/slide-2.jpg" width="570" height="270" alt="Slide 2"></a>
+						<div class="caption">
+							<p>Check Out the Latest Single - &quot;I Am Free&quot;</p>
+						</div>
+
+					</div>
+
+					<div class="slide">
+						<a href="#" title="Beauty for Ashes"><img src="images/gallery/slide-3.jpg" width="570" height="270" alt="Slide 3"></a>
+						<div class="caption">
+							<p>New Album Release &quot;Beauty for Ashes&quot; Coming Soon!</p>
+						</div>
+					</div>
+
+				</div>
+
+				<a href="#" class="prev"><img src="images/gallery/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
+				<a href="#" class="next"><img src="images/gallery/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>
+			</div>
+			<img src="images/gallery/example-frame.png" width="739" height="341" alt="Example Frame" id="frame"> 
+		</div> <!--END GALLERY WRAP -->
+				
+				
+				
+			
+			
+			</div><!--END NAME and GALLERY WRAP FOR FLOAT RIGHT -->
+		</div><!--END OVERALL BANNER WRAP TO HOLD EVERTYHING TOGETHER -->
+		
+		
+		<div id="main-content"><!--MAIN CONTENT WRAP FOR MAIN SECTION -->
+
+		
+			<div id="left-content">
+				<h2 class="main-title">Latest News &amp; Updates</h2>
+				
+				<div class="news-content">
+					<h3 id="sub-title">Beauty for Ashes Now Available on iTunes</h3>
+						<img src="images/default/album_icon.jpg" class="news-icon" alt="iTunes" />
+						<p>Demetric Selvey's New Album Beauty for Ashes is now available on iTunes. <br>Be sure to check it out Here!</p>
+				</div>
+
+				
+				<div class="news-content">
+					<h3 id="sub-title">Check out the new hit single "I am Free"</h3>
+						<img src="images/default/iamfree_icon.jpg" class="news-icon" alt="iTunes" />
+						<p>Demetric Selvey's New Album Beauty for Ashes is now available on iTunes. <br>Be sure to check it out Here!</p>
+				</div>
+				
+				<div class="news-content">
+					<h3 id="sub-title">Check out the new hit single "I am Free"</h3>
+						<img src="images/default/album_icon.jpg" class="news-icon" alt="iTunes" />
+						<p>Demetric Selvey's New Album Beauty for Ashes is now available on iTunes. <br>Be sure to check it out Here!</p>
+				</div>
+				
+				<div class="news-content">
+					<h3 id="sub-title">Check out the new hit single "I am Free"</h3>
+						<img src="images/default/iamfree_icon.jpg" class="news-icon" alt="iTunes" />
+						<p>Demetric Selvey's New Album Beauty for Ashes is now available on iTunes. <br>Be sure to check it out Here!</p>
+				</div>
+				
+				
+			
+			</div>
+			
+			<div id="right-content">
+
+			
+			<h2 class="main-title">Facebook Community</h2>
+			
+			
+			
+			<div class="fb-like-box" data-href="http://www.facebook.com/pages/Demetric-Selvey/297399216994642" data-width="400" data-show-faces="true" data-stream="false" data-header="true"></div>
+
+			
+			
+			<h2 class="main-title" style="margin-top:20px;">Stay in Touch!</h2>
+				<ul id="social-cons">
+					<li><a href="http://www.facebook.com/pages/Demetric-Selvey/297399216994642" target="_blank"><img src="images/default/icon_facebook.png" class="icons" alt="Facebook" /></a></li>
+					<li><a href="#" target="_blank"><img src="images/default/icon_twitter.png" class="icons" alt="Twitter" /></a></li>
+					<li><a href="#" target="_blank"><img src="images/default/icon_youtube.png" class="icons" alt="Youtube" /></a></li>
+					<li><a href="#" target="_blank"><img src="images/default/icon_itunes.png" class="icons" alt="iTunes" /></a></li>
+					<li><a href="http://www.mantramuzic.com/"><img src="images/default/icon_mantra.png" class="icons" alt="Mantra Muzic" /></a></li>
+				</ul>
+
+			</div><!--END RIGHT CONTENT DIV -->
+		
+		</div><!--END MAIN CONTENT WRAP FOR MAIN SECTION -->
+			
+			
+	<div id="footer">
+			<ul class="bottom-menu">
+				<li><a href="/">Demetric Selvey</a></li>
+				<li><a href="news.html">News</a></li>
+				<li><a href="about.html">About</a></li>
+
+				<li><a href="media.html">Media</a></li>
+				<li><a href="gallery.html">Photo Gallery</a></li>
+				<li><a href="guest-book.html">Guest Book</a></li>
+				<li class="last"><a href="http://www.reverbnation.com/deeselvey" target="_blank">Store</a></li>
+			
+			</ul>
+			
+			<ul class="bottom-menu" id="foot-tag">
+				<li>&copy; 2012 All Rights Reserved</li>
+
+				<li><a href="/" title="Mantra Muzic">MantraMuzic</a></li>
+				
+				<li class="last">Designed by <a href="http://www.csickmedia.com" target="_blank">CsickMedia</a></li>
+			</ul>
+	</div>
+	
+
+</div><!--END CONTAINER SECTION -->
+
+
+</body>
+
+</html>

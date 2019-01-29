@@ -1,0 +1,243 @@
+/*
+
+ SoundManager 2: In-page MP3 player example
+ ------------------------------------------
+
+ Clicks on links to MP3s are intercepted via JS, calls are
+ made to SoundManager to load/play sounds. CSS classes are
+ appended to the link, which are used to highlight the
+ current play state and so on.
+
+ Class names are applied in addition to "sm2_link" base.
+
+ Default:
+
+ sm2_link
+
+ Additional states:
+
+ sm2_playing
+ sm2_paused
+
+ eg.
+
+ <!-- default -->
+ <a href="some.mp3" class="sm2_link">some.mp3</a>
+
+ <!-- playing -->
+ <a href="some.mp3" class="sm2_link sm2_playing">some.mp3</a>
+
+
+ Note you don't require ul.graphic / ul.flat etc. for your use
+ if only using one style on a page. You can just use .sm2_link{}
+ and so on, but isolate the CSS you want.
+
+ Side note: Would do multiple class definitions eg.
+
+ a.sm2_default.sm2_playing{}
+
+ .. except IE 6 has a parsing bug which may break behaviour,
+ applying sm2_playing {} even when the class is set to sm2_default.
+
+
+ If you want to make your own UI from scratch, here is the base:
+
+ Default + hover state, "click to play":
+
+ a.sm2_link {}
+ a.sm2_link:hover {}
+
+ Playing + hover state, "click to pause":
+
+ a.sm2_playing {}
+ a.sm2_playing:hover {}
+
+ Paused + hover state, "click to resume":
+
+ a.sm2_paused {}
+ a.sm2_paused:hover {}
+
+
+*/
+
+/* two different list types */
+div#media {
+margin : 30px auto;
+width : 800px;
+/*overflow : hidden; */
+border-bottom : 1px dotted #896649;
+padding-bottom : 50px;
+}
+
+div#media-right {
+float : right;
+width : 510px;
+}
+
+div.header {
+text-align : left;
+}
+
+h2.title {
+font-family : "Comfortaa", sans-serif;
+font-weight : 400;
+}
+
+
+div#media-left {
+float : left;
+width : 245px;
+margin-left : 10px;
+}
+
+img#album-cover {
+width : 245px;
+height : 250px;
+background : #3e3e3e;
+}
+
+h2#album-button {
+display : block;
+width : 100%;
+text-align : center;
+background : #896649;
+font-family : "Comfortaa", sans-serif;
+font-size : 1em;
+}
+
+h2#album-button a {
+display : block;
+color : #fff;
+width : 100%;
+padding : 10px; 0;
+}
+
+
+
+table.table1 {
+margin-top : 20px;
+text-align : left;
+font-size : 14px;
+font-weight : bold;
+line-height : 1.4em;
+border-collapse : separate;
+}
+/*
+.table1 tr {
+background : #dfbca0;
+}
+
+.table1 tr#alt {
+background : #eacfb8;
+} */
+
+.table1 tbody td {
+padding : 8px;
+text-align : left;
+border-bottom : 1px solid #896649;
+color : #dfbca0;
+}
+
+.table1 td.title {
+width : 345px;
+}
+
+/*table.table1 td.play {
+text-indent : -9999px;
+} */
+
+
+
+/* background-image-based CSS3 example */
+
+table.table1 a,
+table.table1 a.sm2_link {
+ /* assume all items will be sounds rather than wait for onload etc. in this example.. may differ for your uses. */
+display:block;
+width : 16px;
+height : 16px;
+/*vertical-align: middle; */
+text-indent : -9999px;
+}
+
+table.table1 a.sm2_link {
+ /* safari 3.1+ fun (or, proprietary crap. TBD.) */
+ 
+}
+
+table.table1 a, /* use a.sm2_link {} if you want play icons showing only if SM2 is supported */
+table.table1 a.sm2_paused:hover,
+table.table1 a.sm2_link:hover {
+ background : url(../images/buttons/play1.png) no-repeat;
+  _background:url(../images/buttons/play.gif) no-repeat; /* IE 6 */
+}
+
+
+table.table1 a.sm2_paused:hover {
+ background: url(../images/buttons/play1.png) no-repeat;
+ _background:url(../images/icon_play.gif);
+}
+
+table.table1 a.sm2_playing,
+table.table1 a.sm2_playing:hover {
+ background: url(../images/buttons/pause1.png) no-repeat;
+ _background-image:url(../images/icon_pause.gif);
+
+}
+
+/* hide button while playing?
+ul.graphic li a.sm2_playing {
+ background-image:none;
+}
+*/
+
+body #sm2-container object,
+body #sm2-container embed {
+ /*
+  flashblock handling: hide SWF off-screen by default (until blocked timeout case.)
+  include body prefix to ensure override of flashblock.css.
+ */
+
+ left:-9999em;
+ top:-9999em;
+}
+
+/* flat CSS example */
+
+ul.flat a.sm2_link {
+ /* default state: "a playable link" */
+ border-left:6px solid #999;
+ padding-left:4px;
+ padding-right:4px;
+}
+
+ul.flat a.sm2_link:hover {
+ /* default (inactive) hover state */
+ border-left-color:#333;
+}
+
+
+ul.flat a.sm2_playing {
+ /* "now playing" */
+ border-left-color:#6666ff;
+ background-color:#000;
+ color:#fff;
+ text-decoration:none;
+}
+
+ul.flat a.sm2_playing:hover {
+ /* "clicking will now pause" */
+ border-left-color:#cc3333;
+}
+
+ul.flat a.sm2_paused {
+ /* "paused state" */
+ background-color:#666;
+ color:#fff;
+ text-decoration:none;
+}
+
+ul.flat a.sm2_paused:hover {
+ /* "clicking will resume" */
+ border-left-color:#33cc33;
+}
